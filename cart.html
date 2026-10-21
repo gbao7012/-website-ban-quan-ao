@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng | STYLE STORE</title>
+
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">STYLE<span>STORE</span></a>
+
+        <nav class="navbar">
+            <a href="index.html">Trang chủ</a>
+            <a href="products.html">Sản phẩm</a>
+            <a href="about.html">Giới thiệu</a>
+            <a href="contact.html">Liên hệ</a>
+            <a href="cart.html" class="active">Giỏ hàng</a>
+        </nav>
+    </header>
+
+    <main class="container">
+
+        <h1>Giỏ hàng của bạn</h1>
+        <p class="subtitle">Kiểm tra sản phẩm trước khi thanh toán.</p>
+
+        <div class="cart-layout">
+
+            <section class="cart-products">
+
+                <div class="section-heading">
+                    <h2>Sản phẩm</h2>
+                    <span>2 sản phẩm</span>
+                </div>
+
+                <article class="product">
+                    <img src="images/phong.jpg"
+                         alt="Áo thun basic màu trắng">
+
+                    <div class="product-info">
+                        <h3>Áo thun Basic</h3>
+                        <p>Màu sắc: Đen</p>
+                        <p>Kích thước: M</p>
+                        <a href="products.html" class="remove">
+                            Xóa sản phẩm
+                        </a>
+                    </div>
+
+                    <div class="product-price">
+                        <strong>250.000đ</strong>
+                        <label for="quantity1">Số lượng</label>
+                        <input type="number" id="quantity1"
+                               value="1" min="1" max="99">
+                    </div>
+                </article>
+
+                <article class="product">
+                    <img src="images/jeans.jpg"
+                         alt="Quần jeans xanh">
+
+                    <div class="product-info">
+                        <h3>Quần Jeans</h3>
+                        <p>Màu sắc: Xanh</p>
+                        <p>Kích thước: L</p>
+                        <a href="products.html" class="remove">
+                            Xóa sản phẩm
+                        </a>
+                    </div>
+
+                    <div class="product-price">
+                        <strong>350.000đ</strong>
+                        <label for="quantity2">Số lượng</label>
+                        <input type="number" id="quantity2"
+                               value="1" min="1" max="99">
+                    </div>
+                </article>
+
+                <a href="products.html" class="continue-shopping">
+                    ← Tiếp tục mua sắm
+                </a>
+
+            </section>
+
+            <aside class="order-summary">
+
+                <h2>Tóm tắt đơn hàng</h2>
+
+                <div class="summary-row">
+                    <span>Tạm tính</span>
+                    <span>600.000đ</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Phí vận chuyển</span>
+                    <span>15.000đ</span>
+                </div>
+
+                <div class="summary-row total">
+                    <span>Tổng cộng</span>
+                    <span>615.000đ</span>
+                </div>
+
+                <h3>Thông tin nhận hàng</h3>
+
+                <form action="#" method="get">
+                    <label for="fullname">Họ và tên</label>
+                    <input type="text" id="fullname"
+                           name="fullname"
+                           placeholder="Nhập họ tên" required>
+
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone"
+                           name="phone"
+                           placeholder="Nhập số điện thoại" required>
+
+                    <label for="address">Địa chỉ giao hàng</label>
+                    <textarea id="address" name="address"
+                              placeholder="Số nhà, đường, quận/huyện..."
+                              required></textarea>
+
+                    <button type="submit" class="checkout-btn">
+                        ĐẶT HÀNG
+                    </button>
+                </form>
+
+                <p class="note">
+                    Phí vận chuyển sẽ được xác nhận khi xử lý đơn hàng.
+                </p>
+
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 STYLE STORE. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
