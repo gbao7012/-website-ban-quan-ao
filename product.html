@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh Sách Sản Phẩm - Student Shop</title>
+   
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+
+    
+    <main class="product-section">
+        
+        
+        <div class="product-header">
+            <h1 class="product-heading">Sản Phẩm Thời Trang</h1>
+            
+            <div class="product-filter-bar">
+                <div class="filter-group">
+                    <label for="category">Danh mục:</label>
+                    <select id="category">
+                        <option value="all">Tất cả</option>
+                        <option value="ao-thun">Áo thun</option>
+                        <option value="ao-polo">Áo Polo</option>
+                        <option value="ao-hoodie">Áo Hoodie</option>
+                        <option value="quan-jeans">Quần Jeans</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="sort">Sắp xếp:</label>
+                    <select id="sort">
+                        <option value="newest">Mới nhất</option>
+                        <option value="price-low">Giá: Thấp đến Cao</option>
+                        <option value="price-high">Giá: Cao đến Thấp</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="product-grid">
+
+            
+            <div class="product-card">
+                <span class="badge badge-hot">HOT</span>
+                <div class="product-image">
+                    <img src="images/polo.jpg" alt="Áo Polo Đen">
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Áo Polo</span>
+                    <h2 class="product-name">Áo Polo Nam Đen Premium</h2>
+                    <div class="product-price-box">
+                        <span class="product-price">350.000 VNĐ</span>
+                    </div>
+                    <button class="btn-add-cart">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+
+           
+            <div class="product-card">
+                <span class="badge badge-sale">-20%</span>
+                <div class="product-image">
+                    <img src="images/phong.jpg" alt="Áo T-Shirt Nam Cổ Tròn">
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Áo Thun</span>
+                    <h2 class="product-name">Áo T-Shirt Cổ Tròn Classy</h2>
+                    <div class="product-price-box">
+                        <span class="product-price">180.000 VNĐ</span>
+                        <span class="old-price">225.000 VNĐ</span>
+                    </div>
+                    <button class="btn-add-cart">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/hoodie.jpg" alt="Áo Hoodie Nỉ Oversize">
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Áo Hoodie</span>
+                    <h2 class="product-name">Áo Hoodie Oversize Nỉ Form Rộng</h2>
+                    <div class="product-price-box">
+                        <span class="product-price">290.000 VNĐ</span>
+                    </div>
+                    <button class="btn-add-cart">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+
+            
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="images/jeans.jpg" alt="Quần Jeans Denim Classic">
+                </div>
+                <div class="product-details">
+                    <span class="product-category">Quần Jeans</span>
+                    <h2 class="product-name">Quần Jeans Denim Classic Fit</h2>
+                    <div class="product-price-box">
+                        <span class="product-price">420.000 VNĐ</span>
+                    </div>
+                    <button class="btn-add-cart">Thêm vào giỏ hàng</button>
+                </div>
+            </div>
+
+        </div>
+
+         
+        <div class="pagination">
+            <a href="#" class="page-link active">1</a>
+            <a href="#" class="page-link">2</a>
+            <a href="#" class="page-link">3</a>
+            <a href="#" class="page-link">&raquo;</a>
+        </div>
+
+    </main>
+
+</body>
+</html>
