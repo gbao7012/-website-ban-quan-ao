@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYLE STORE - Shop quần áo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Thanh điều hướng -->
+    <header class="header">
+        <a href="#" class="logo">STYLE<span>STORE</span></a>
+
+        <nav class="navbar">
+            <a href="#home">Trang chủ</a>
+            <a href="#products">Sản phẩm</a>
+            <a href="#about">Giới thiệu</a>
+            <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <div class="header-actions">
+            <input type="text" id="searchInput"
+                   placeholder="Tìm quần áo...">
+            <button id="cartButton">
+                Giỏ hàng (<span id="cartCount">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="subtitle">BỘ SƯU TẬP MỚI 2026</p>
+            <h1>PHONG CÁCH<br> CỦA RIÊNG BẠN</h1>
+            <p>Khám phá xu hướng thời trang mới nhất.</p>
+            <a href="#products" class="btn">Mua sắm ngay</a>
+        </div>
+    </section>
+
+    <!-- Danh mục -->
+    <section class="categories">
+        <h2>Danh mục sản phẩm</h2>
+        <div class="category-list">
+            <button class="category-btn active" data-category="all">
+                Tất cả
+            </button>
+            <button class="category-btn" data-category="nam">
+                Thời trang nam
+            </button>
+            <button class="category-btn" data-category="nu">
+                Thời trang nữ
+            </button>
+            <button class="category-btn" data-category="phukien">
+                Phụ kiện
+            </button>
+        </div>
+    </section>
+
+    <!-- Danh sách sản phẩm -->
+    <main class="products" id="products">
+        <h2>Sản phẩm nổi bật</h2>
+        <p class="section-desc">
+            Lựa chọn những sản phẩm phù hợp với phong cách của bạn.
+        </p>
+
+        <div class="product-grid" id="productList">
+
+            <article class="product-card" data-category="nam">
+                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80"
+                     alt="Áo thun basic">
+                <div class="product-info">
+                    <h3>Áo thun basic</h3>
+                    <p class="price">199.000đ</p>
+                    <button class="add-cart" data-name="Áo thun basic"
+                            data-price="199000">
+                        Thêm vào giỏ
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="nu">
+                <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&w=600&q=80"
+                     alt="Váy thời trang">
+                <div class="product-info">
+                    <h3>Váy thời trang</h3>
+                    <p class="price">350.000đ</p>
+                    <button class="add-cart" data-name="Váy thời trang"
+                            data-price="350000">
+                        Thêm vào giỏ
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="nam">
+                <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=600&q=80"
+                     alt="Áo khoác phong cách">
+                <div class="product-info">
+                    <h3>Áo khoác phong cách</h3>
+                    <p class="price">450.000đ</p>
+                    <button class="add-cart"
+                            data-name="Áo khoác phong cách"
+                            data-price="450000">
+                        Thêm vào giỏ
+                    </button>
+                </div>
+            </article>
+
+            <article class="product-card" data-category="phukien">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80"
+                     alt="Đồng hồ thời trang">
+                <div class="product-info">
+                    <h3>Đồng hồ thời trang</h3>
+                    <p class="price">299.000đ</p>
+                    <button class="add-cart"
+                            data-name="Đồng hồ thời trang"
+                            data-price="299000">
+                        Thêm vào giỏ
+                    </button>
+                </div>
+            </article>
+
+        </div>
+        <p id="emptyMessage" hidden>Không tìm thấy sản phẩm phù hợp.</p>
+    </main>
+
+    <!-- Giỏ hàng -->
+    <section class="cart-section" id="cart">
+        <h2>Giỏ hàng của bạn</h2>
+        <ul id="cartItems"></ul>
+        <p class="total">
+            Tổng tiền: <span id="cartTotal">0đ</span>
+        </p>
+        <button id="clearCart" class="btn-secondary">
+            Xóa giỏ hàng
+        </button>
+    </section>
+
+    <!-- Giới thiệu -->
+    <section class="about" id="about">
+        <h2>Về STYLE STORE</h2>
+        <p>
+            STYLE STORE mang đến các sản phẩm thời trang trẻ trung,
+            hiện đại và phù hợp với nhiều phong cách khác nhau.
+            Chúng tôi luôn hướng đến chất lượng và trải nghiệm mua sắm
+            tốt nhất cho khách hàng.
+        </p>
+    </section>
+
+    <!-- Liên hệ -->
+    <footer id="contact">
+        <h2>STYLE STORE</h2>
+        <p>Email: nhom9store@gmail.com</p>
+        <p>Hotline: 0948 383 822</p>
+        <p>Địa chỉ: Hà Nội, Việt Nam</p>
+        <p class="thietke">
+            © 2026 STYLE STORE | Bài tập nhóm thiết kế website
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
